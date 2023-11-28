@@ -18,7 +18,7 @@ const Login = () => {
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 		try {
-			const url = "http://localhost:5000/api/auth";
+			const url = "https://lms-server-git-main-hannanaslamtech.vercel.app/api/auth";
 			const { data: res } = await axios.post(url, data);
 			if (res.role === "faculty") {
 				localStorage.setItem('role', res.role);

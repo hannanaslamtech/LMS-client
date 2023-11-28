@@ -35,9 +35,8 @@ const Header = () => {
           <span className='font-semibold'>LMS - </span>
           Faculty Dashboard</p>
       </div>
-      <div className='w-[30%] h-full flex justify-end items-center px-[1vw]'>
-        <div className="flex flex-col items-end justify-center w-auto h-full">
-
+      <div className='w-[20%] h-full flex justify-center items-center'>
+        <div className="flex flex-col items-end justify-center">
           <div className="text-[1vw] text-base font-semibold">Professor Akram Rasheed</div>
           <div className="font-normal text-gray-500">akram12@faculty.au.edu.pk</div>
         </div>

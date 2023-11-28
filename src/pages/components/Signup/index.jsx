@@ -22,7 +22,7 @@ const Signup = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const url = "http://localhost:5000/api/users";
+      const url = "https://lms-server-git-main-hannanaslamtech.vercel.app/api/users";
       const { data: res } = await axios.post(url, data);
       navigate("/");
       console.log(res.message);
