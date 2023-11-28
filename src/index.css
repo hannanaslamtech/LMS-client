@@ -1,0 +1,47 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer utilities {
+    @variants responsive {
+
+        /* Hide scrollbar for Chrome, Safari, and Opera */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* Hide scrollbar for IE, Edge, and Firefox */
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            /* IE and Edge */
+            scrollbar-width: none;
+            /* Firefox */
+        }
+
+        .style-scrollbar::-webkit-scrollbar {
+            width:  1vw;
+            height: 1vh;
+            cursor: pointer;
+        }
+
+        /* Track */
+        .style-scrollbar::-webkit-scrollbar-track {
+            background: rgb(219 234 254);
+            border-radius: 12px;
+        }
+
+        /* Handle */
+        .style-scrollbar::-webkit-scrollbar-thumb {
+            background: rgb(37 99 235);
+            border-radius: 12px;
+        }
+    }
+}
+
+/* Apply default font family to the body */
+body {
+    font-family: 'Poppins-Black', sans-serif;
+    /* Include the correct path to your font file */
+}
+
+/* Include the correct path to your font file */
