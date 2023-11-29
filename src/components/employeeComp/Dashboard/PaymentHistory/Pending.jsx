@@ -79,9 +79,9 @@ const Pending = ({ openPending, PendingModalHandler }) => {
           <table className="min-w-full bg-white border-spacing-[1vw] border rounded-[1vw] border-gray-300 table-fixed">
             <thead>
               <tr>
-                <th className="px-4 py-2 border-b">Date</th>
+                <th className="px-4 py-2 text-center border-b">Date</th>
                 <th className="px-4 py-2 text-left border-b">Payment Description</th>
-                <th className="px-4 py-2 border-b">Due Date</th>
+                <th className="px-4 py-2 text-center border-b">Due Date</th>
                 <th className="px-4 py-2 text-right border-b">Amount</th>
 
               </tr>

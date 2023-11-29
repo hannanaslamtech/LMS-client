@@ -193,20 +193,20 @@ const AllSemModal = ({ openAllSemModal, AllSemModalHandler }) => {
                       {/* Calculate totals */}
                       {semester.SemesterDetail.length > 0 && (
                         <tr className="text-white bg-blue-950">
-                          <td className="px-4 py-2 border-b">Total</td>
-                          <td className="px-4 py-2 border-b">
+                          <td className="px-4 py-2 border-b text-start">Total</td>
+                          <td className="px-4 py-2 text-center border-b">
                             {calculateAverage(semester.SemesterDetail, 'Attendence')}
                           </td>
-                          <td className="px-4 py-2 border-b">
+                          <td className="px-4 py-2 text-center border-b">
                             {calculateAverage(semester.SemesterDetail, 'Assignment')}
                           </td>
-                          <td className="px-4 py-2 border-b">
+                          <td className="px-4 py-2 text-center border-b">
                             {calculateAverage(semester.SemesterDetail, 'Quiz')}
                           </td>
-                          <td className="px-4 py-2 border-b">
+                          <td className="px-4 py-2 text-center border-b">
                             {calculateAverage(semester.SemesterDetail, 'Exams')}
                           </td>
-                          <td className="px-4 py-2 border-b">
+                          <td className="px-4 py-2 text-center border-b">
                             {calculateAverage(semester.SemesterDetail, 'FinalResult')}
                           </td>
                         </tr>

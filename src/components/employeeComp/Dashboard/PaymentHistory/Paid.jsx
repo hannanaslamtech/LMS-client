@@ -97,7 +97,7 @@ const Paid = ({ openPaid, PaidModalHandler }) => {
             <thead>
               <tr className='border-1'>
                 <th className="px-4 py-2 text-left border-b">Payment Description</th>
-                <th className="px-4 py-2 border-b">Date</th>
+                <th className="px-4 py-2 text-center border-b">Date</th>
                 <th className="px-4 py-2 text-left border-b">Payment Mode</th>
                 <th className="px-4 py-2 text-left border-b">Reference</th>
                 <th className="px-4 py-2 text-right border-b">Amount</th>
