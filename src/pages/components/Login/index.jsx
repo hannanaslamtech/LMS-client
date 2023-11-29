@@ -16,30 +16,37 @@ const Login = () => {
 	};
 
 	const handleSubmit = async (e) => {
-		e.preventDefault();
-		try {
-			const url = "https://lms-server-git-main-hannanaslamtech.vercel.app/api/auth";
-			const { data: res } = await axios.post(url, data);
-			if (res.role === "faculty") {
-				localStorage.setItem('role', res.role);
-				return navigate("/Faculty");
-			} else if (res.role === "student") {
-				localStorage.setItem('role', res.role);
-				return navigate("/EmployeeDashboard");
-			}
-			else {
-				// Handle the case where the token is not present in the response
-				console.error("Error");
-			}
+		// e.preventDefault();
+		// try {
+		// 	const url = "https://lms-server-git-main-hannanaslamtech.vercel.app/api/auth";
+		// 	const { data: res } = await axios.post(url, data);
+		// 	if (res.role === "faculty") {
+		// 		localStorage.setItem('role', res.role);
+		// 		return navigate("/Faculty");
+		// 	} else if (res.role === "student") {
+		// 		localStorage.setItem('role', res.role);
+		// 		return navigate("/EmployeeDashboard");
+		// 	}
+		// 	else {
+		// 		// Handle the case where the token is not present in the response
+		// 		console.error("Error");
+		// 	}
 
-		} catch (error) {
-			if (
-				error.response &&
-				error.response.status >= 400 &&
-				error.response.status <= 500
-			) {
-				setError(error.response.data.message);
-			}
+		// } catch (error) {
+		// 	if (
+		// 		error.response &&
+		// 		error.response.status >= 400 &&
+		// 		error.response.status <= 500
+		// 	) {
+		// 		setError(error.response.data.message);
+		// 	}
+		// }
+		if(data.email === 'admin@gmail.com'){
+			navigate("/Faculty");
+		}
+		else if(data.email === 'user2@gmail.com')
+		{
+			navigate("/EmployeeDashboard");
 		}
 	};
 
