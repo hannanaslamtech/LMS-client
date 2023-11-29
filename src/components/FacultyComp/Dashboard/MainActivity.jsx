@@ -115,7 +115,7 @@ const MainActivity = () => {
                 <div className='w-full h-full bg-gray-100 shadow-md shadow-blue-500 rounded-[1vw]'>
                     {/* Table Header */}
                     <div className='w-full h-[5vh] flex bg-blue-100 rounded-t-xl'>
-                        <div className='w-[65%] h-full bg-blue-500 text-white flex justify-center items-center gap-x-[1vw] rounded-r-md rounded-tl-xl'>
+                        <div className='w-[75%] h-full bg-blue-500 text-white flex justify-center items-center gap-x-[1vw] rounded-r-md rounded-tl-xl'>
                             <div className='w-[50%] h-full flex justify-center items-start gap-x-[1vw] px-[0.5vw]'>
                                 <select
                                     id='select-academic-year'
@@ -149,23 +149,23 @@ const MainActivity = () => {
                                 <p className='text-[1.2vw] tracking-wider font-semibold'>Completed & Planned Activity</p>
                             </div>
                         </div>
-                        <div className='w-[35%] h-full bg-blue-500 text-white flex justify-center items-center rounded-l-md rounded-tr-xl'>
+                        <div className='w-[25%] h-full bg-blue-500 text-white flex justify-center items-center rounded-l-md rounded-tr-xl'>
                             <p className='text-[1.2vw] tracking-wider font-semibold'>Weekly Class Schedule (Period)</p>
                         </div>
                     </div>
                     {/* Table Body */}
                     <div className='w-full h-[25vh] flex overflow-x-auto style-scrollbar rounded-[1vw]'>
-                        <div className="w-[65%] rounded-b-xl">
+                        <div className="w-[75%] rounded-b-xl">
                             <table className="min-w-full bg-white border table-fixed">
                                 <thead>
                                     <tr>
                                         <th className="sticky top-0 bg-blue-100 rounded-r-md px-[0.5vw] py-[1vh] text-[1vw] w-[10%] flex-shrink-0">
                                             Class
                                         </th>
-                                        <th className="sticky top-0 bg-gray-200 rounded-r-md px-[0.5vw] py-[1vh] text-[1vw] w-[25%] flex-shrink-0 text-left">
+                                        <th className="sticky top-0 bg-gray-200 rounded-r-md px-[0.5vw] py-[1vh] text-[1vw] w-[30%] flex-shrink-0 text-left">
                                             Course
                                         </th>
-                                        <th className="sticky top-0 bg-blue-100 px-[0.5vw] py-[1vh] text-[1vw] w-[15%] flex-shrink-0">
+                                        <th className="sticky top-0 bg-blue-100 px-[0.5vw] py-[1vh] text-[1vw] w-[10%] flex-shrink-0">
                                             Credits Hour
                                         </th>
                                         <th className="sticky top-0 bg-gray-200 px-[0.5vw] py-[1vh] text-[1vw] w-[10%] flex-shrink-0">
@@ -188,20 +188,20 @@ const MainActivity = () => {
                                 <tbody>
                                     {timetableData.map((item) => (
                                         <tr className='divide-y divide-gray-200' key={item.id}>
-                                            <td className="px-[0.5vw] py-[1vh] text-[0.8vw] flex-shrink-0">{item.className}</td>
+                                            <td className="px-[0.5vw] py-[1vh] text-[0.8vw] flex-shrink-0 text-left">{item.className}</td>
                                             <td className="px-[0.5vw] py-[1vh] text-[0.8vw] flex-shrink-0 truncate text-left">{item.course}</td>
-                                            <td className="px-[0.5vw] py-[1vh] text-[0.8vw] flex-shrink-0">{item.credits}</td>
-                                            <td className="px-[0.5vw] py-[1vh] text-[0.8vw] flex-shrink-0">{item.students}</td>
-                                            <td className="px-[0.5vw] py-[1vh] text-[0.8vw] flex-shrink-0">{item.lecture}</td>
-                                            <td className="px-[0.5vw] py-[1vh] text-[0.8vw] flex-shrink-0">{item.assignment}</td>
-                                            <td className="px-[0.5vw] py-[1vh] text-[0.8vw] flex-shrink-0">{item.quiz}</td>
-                                            <td className="px-[0.5vw] py-[1vh] text-[0.8vw] flex-shrink-0">{item.exam}</td>
+                                            <td className="px-[0.5vw] py-[1vh] text-[0.8vw] flex-shrink-0 text-center">{item.credits}</td>
+                                            <td className="px-[0.5vw] py-[1vh] text-[0.8vw] flex-shrink-0 text-center">{item.students}</td>
+                                            <td className="px-[0.5vw] py-[1vh] text-[0.8vw] flex-shrink-0 text-center">{item.lecture}</td>
+                                            <td className="px-[0.5vw] py-[1vh] text-[0.8vw] flex-shrink-0 text-center">{item.assignment}</td>
+                                            <td className="px-[0.5vw] py-[1vh] text-[0.8vw] flex-shrink-0 text-center">{item.quiz}</td>
+                                            <td className="px-[0.5vw] py-[1vh] text-[0.8vw] flex-shrink-0 text-center">{item.exam}</td>
                                         </tr>
                                     ))}
                                 </tbody>
                             </table>
                         </div>
-                        <div className="w-[35%] rounded-b-xl">
+                        <div className="w-[25%] rounded-b-xl">
                             <table className="min-w-full bg-white border table-fixed">
                                 <thead>
                                     <tr>
@@ -228,22 +228,22 @@ const MainActivity = () => {
                                 <tbody>
                                     {PeriodData.map((item) => (
                                         <tr className='divide-y divide-gray-200' key={item.id}>
-                                            <td className={`px-[0.5vw] py-[1vh] text-[0.8vw] rounded-[0.5vw] flex-shrink-0 ${item.mon ? 'bg-blue-300' : 'bg-gray-100'}`}>
+                                            <td className={`text-center px-[0.5vw] py-[1vh] text-[0.8vw] rounded-[0.5vw] flex-shrink-0 ${item.mon ? 'bg-blue-300' : 'bg-gray-100'}`}>
                                                 {item.mon}
                                             </td>
-                                            <td className={`px-[0.5vw] py-[1vh] text-[0.8vw] rounded-[0.5vw]  flex-shrink-0 ${item.tue ? 'bg-blue-300' : 'bg-gray-100'}`}>
+                                            <td className={`text-center px-[0.5vw] py-[1vh] text-[0.8vw] rounded-[0.5vw]  flex-shrink-0 ${item.tue ? 'bg-blue-300' : 'bg-gray-100'}`}>
                                                 {item.tue}
                                             </td>
-                                            <td className={`px-[0.5vw] py-[1vh] text-[0.8vw] rounded-[0.5vw]  flex-shrink-0 ${item.wed ? 'bg-blue-300' : 'bg-gray-100'}`}>
+                                            <td className={`text-center px-[0.5vw] py-[1vh] text-[0.8vw] rounded-[0.5vw]  flex-shrink-0 ${item.wed ? 'bg-blue-300' : 'bg-gray-100'}`}>
                                                 {item.wed}
                                             </td>
-                                            <td className={`px-[0.5vw] py-[1vh] text-[0.8vw]  rounded-[0.5vw] flex-shrink-0 ${item.thu ? 'bg-blue-300' : 'bg-gray-100'}`}>
+                                            <td className={`text-center px-[0.5vw] py-[1vh] text-[0.8vw]  rounded-[0.5vw] flex-shrink-0 ${item.thu ? 'bg-blue-300' : 'bg-gray-100'}`}>
                                                 {item.thu}
                                             </td>
-                                            <td className={`px-[0.5vw] py-[1vh] text-[0.8vw] rounded-[0.5vw]  flex-shrink-0 ${item.fri ? 'bg-blue-300' : 'bg-gray-100'}`}>
+                                            <td className={`text-center px-[0.5vw] py-[1vh] text-[0.8vw] rounded-[0.5vw]  flex-shrink-0 ${item.fri ? 'bg-blue-300' : 'bg-gray-100'}`}>
                                                 {item.fri}
                                             </td>
-                                            <td className={`px-[0.5vw] py-[1vh] text-[0.8vw] rounded-[0.5vw]  flex-shrink-0 ${item.sat ? 'bg-blue-300' : 'bg-gray-100'}`}>
+                                            <td className={`text-center px-[0.5vw] py-[1vh] text-[0.8vw] rounded-[0.5vw]  flex-shrink-0 ${item.sat ? 'bg-blue-300' : 'bg-gray-100'}`}>
                                                 {item.sat}
                                             </td>
                                         </tr>

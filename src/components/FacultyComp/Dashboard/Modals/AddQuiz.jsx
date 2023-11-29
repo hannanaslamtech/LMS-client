@@ -9,7 +9,7 @@ const AddQuiz = ({ openQuizModal, QuizModalHandler }) => {
         setMaxScreen(!maxScreen);
     }
 
-    const Categories = ['Online','Paper-based'];
+    const Categories = ['Online','Paper-based','Verbal'];
 
     const [selectedCategory, setSelectedCategory] = useState(''); // Initialize selectedCategory state
   

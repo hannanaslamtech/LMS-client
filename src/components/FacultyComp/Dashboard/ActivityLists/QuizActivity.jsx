@@ -22,7 +22,7 @@ const QuizVal = [
   {
     "assignmentNo": 3,
     "assignmentDate": "14 Jul, 2023",
-    "type": "Online",
+    "type": "Verbal",
     "totalMarks": 18,
     "attachmentLink": "https://example.com/attachment3",
     "briefDescription": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
@@ -66,10 +66,10 @@ const QuizActivity = ({ handleActivityList, activity,QuizModalHandler}) => {
           icon={faCaretDown}
           style={{ color: '#fff' }}
         />
-        <p className='text-[1.2vw]'>Quizs</p>
+        <p className='text-[1.2vw]'>Quizzes</p>
       </div>
       <div className='w-full h-[45vh]'>
-        <div className='w-full h-[8vh] flex justify-center items-center gap-x-[1vw] py-[1vh] px-[1vw]'>
+        <div className='w-full h-[8vh] flex justify-start items-center gap-x-[1vw] py-[1vh] px-[1vw]'>
           {/* Select Class */}
           <select
             id="classSelect"

@@ -58,7 +58,7 @@ const Forums = ({ FeedbackModalHandler }) => {
         className='w-full h-[5vh] bg-blue-200 text-white flex justify-center items-center rounded-t-xl hover:cursor-pointer hover:text-blue-600 hover:underline'
         onClick={() => FeedbackModalHandler()}
       >
-        <p className='text-[1vw] text-black tracking-wider font-semibold hover:text-blue-600 hover:underline'>Feedback</p>
+        <p className='text-[1vw] text-black tracking-wider font-semibold hover:text-blue-600 hover:underline'>Student-University Communication</p>
       </div>
       <div className='w-full h-[15vh] px-[1vw] flex justify-between items-center'>
         <div className='w-[70%] h-full flex flex-col justify-center items-start'>

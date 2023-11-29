@@ -84,7 +84,7 @@ const FeedBackModal = ({ openFeedbackModal, FeedbackModalHandler }) => {
          ${maxScreen ? "h-[15%]" : "h-[20%] rounded-t-[1vw]"}
       `}>
                 <div>
-                    <h1 className="text-[2vw] font-semibold">Feedback Details</h1>
+                    <h1 className="text-[2vw] font-semibold">Student-University Communication</h1>
                 </div>
                 <div className="flex gap-x-[1vw]">
                     <button className='w-[1.2vw] h-[1.2vw] hover:scale-110 duration-300'>

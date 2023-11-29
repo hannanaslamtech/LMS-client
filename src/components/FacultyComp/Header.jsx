@@ -30,14 +30,14 @@ const Header = () => {
       </div>
       <div className='w-[60%] h-full flex flexcol justify-center items-center gap-x-[1vw]'>
         <p className='text-[1.4vw]'>
-          Lahore College for women</p>
+          Lahore College for women, University</p>
         <p className='text-[1vw] bg-blue-900 text-white p-[0.5vw] rounded-[0.5vw]'>
           <span className='font-semibold'>LMS - </span>
           Faculty Dashboard</p>
       </div>
-      <div className='w-[20%] h-full flex justify-center items-center'>
+      <div className='w-[30%] h-full flex justify-end items-center'>
         <div className="flex flex-col items-end justify-center">
-          <div className="text-[1vw] text-base font-semibold">Professor Akram Rasheed</div>
+          <div className="text-[1vw] text-base font-semibold">Prof. Akram Rasheed</div>
           <div className="font-normal text-gray-500">akram12@faculty.au.edu.pk</div>
         </div>
         <div className='relative flex items-start justify-center w-auto h-full'>

@@ -105,7 +105,7 @@ const ReportsActivity = ({handleActivityList ,activity}) => {
         <p className='text-[1.2vw]'>Reports</p>
     </div>
     <div className='w-full h-[45vh]'>
-        <div className='w-full h-[8vh] flex justify-center items-center gap-x-[1vw] py-[1vh] px-[1vw]'>
+        <div className='w-full h-[8vh] flex justify-start items-center gap-x-[1vw] py-[1vh] px-[1vw]'>
           {/* Select Class */}
           <select
             id="classSelect"
