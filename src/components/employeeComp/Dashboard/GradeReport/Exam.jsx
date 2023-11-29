@@ -105,11 +105,11 @@ const Exam = ({ openFinal, FinalModalHandler, courseName }) => {
         <thead>
           <tr>
             <th className="px-4 py-2 text-left border-b">Final Exam</th>
-            <th className="px-4 py-2 border-b">Date</th>
-            <th className="px-4 py-2 border-b">Appeared</th>
-            <th className="px-4 py-2 border-b">Obtained</th>
-            <th className="px-4 py-2 border-b">Total Marks</th>
-            <th className="px-4 py-2 border-b">Result (%)</th>
+            <th className="px-4 py-2 text-center border-b">Date</th>
+            <th className="px-4 py-2 text-center border-b">Appeared</th>
+            <th className="px-4 py-2 text-center border-b">Obtained</th>
+            <th className="px-4 py-2 text-center border-b">Total Marks</th>
+            <th className="px-4 py-2 text-center border-b">Result (%)</th>
           </tr>
         </thead>
         <tbody>
@@ -119,11 +119,11 @@ const Exam = ({ openFinal, FinalModalHandler, courseName }) => {
             Final.status === "No" ? "bg-red-400" :
              "bg-gray-100"}`}>
               <td className="px-4 py-2 text-left border-b">{Final.exam}</td>
-              <td className="px-4 py-2 border-b">{Final.date}</td>
-              <td className="px-4 py-2 border-b">{Final.status}</td>
-              <td className="px-4 py-2 border-b">{Final.obtained}</td>
-              <td className="px-4 py-2 border-b">{Final.totalMarks}</td>
-              <td className="px-4 py-2 border-b">{Final.result}</td>
+              <td className="px-4 py-2 text-center border-b">{Final.date}</td>
+              <td className="px-4 py-2 text-center border-b">{Final.status}</td>
+              <td className="px-4 py-2 text-center border-b">{Final.obtained}</td>
+              <td className="px-4 py-2 text-center border-b">{Final.totalMarks}</td>
+              <td className="px-4 py-2 text-center border-b">{Final.result}</td>
             </tr>
           ))}
         </tbody>

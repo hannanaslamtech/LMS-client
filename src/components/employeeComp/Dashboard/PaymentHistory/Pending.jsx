@@ -90,9 +90,9 @@ const Pending = ({ openPending, PendingModalHandler }) => {
               {PendingVal.map((pending, index) => (
                 <tr key={index}
                   className="even:bg-blue-50 odd:bg-blue-200">
-                  <td className="px-4 py-2 border-b">{pending.date}</td>
+                  <td className="px-4 py-2 text-center border-b">{pending.date}</td>
                   <td className="px-4 py-2 text-left border-b">{pending.desc}</td>
-                  <td className="px-4 py-2 border-b">{pending.Due}</td>
+                  <td className="px-4 py-2 text-center border-b">{pending.Due}</td>
                   <td className="px-4 py-2 text-right border-b">{pending.amount}</td>
 
                 </tr>

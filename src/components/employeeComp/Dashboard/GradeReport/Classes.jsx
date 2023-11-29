@@ -118,9 +118,9 @@ const  Classes = ({ openClasses, ClassesModalHandler, courseName }) => {
                                 <tr key={index}
                                     className="even:bg-blue-50 odd:bg-blue-200"
                                 >
-                                    <td className="px-4 py-2 border-b">{clas.day}</td>
-                                    <td className="px-4 py-2 border-b">{clas.period}</td>
-                                    <td className="px-4 py-2 border-b">{clas.timings}</td>
+                                    <td className="px-4 py-2 text-center border-b">{clas.day}</td>
+                                    <td className="px-4 py-2 text-center border-b">{clas.period}</td>
+                                    <td className="px-4 py-2 text-center border-b">{clas.timings}</td>
                                     <td className="px-4 py-2 text-left border-b">{clas.instructor}</td>
                                     <td className="px-4 py-2 text-left border-b">{clas.classroom}</td>
                                 </tr>

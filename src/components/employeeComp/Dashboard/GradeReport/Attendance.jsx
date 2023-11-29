@@ -141,11 +141,11 @@ const Attendance = ({ openAttendance, AttendanceModalHandler, courseName }) => {
             className={`${attendance.attendance === "Present" ? "bg-green-400" :
             attendance.attendance === "Absent" ? "bg-red-400" :
              "bg-gray-100"}`}>
-              <td className="px-4 py-2 border-b">{attendance.date}</td>
-              <td className="px-4 py-2 border-b">{attendance.day}</td>
-              <td className="px-4 py-2 border-b">{attendance.period}</td>
-              <td className="px-4 py-2 border-b">{attendance.classroom}</td>
-              <td className="px-4 py-2 border-b">{attendance.attendance}</td>
+              <td className="px-4 py-2 text-center border-b">{attendance.date}</td>
+              <td className="px-4 py-2 text-center border-b">{attendance.day}</td>
+              <td className="px-4 py-2 text-center border-b">{attendance.period}</td>
+              <td className="px-4 py-2 text-center border-b">{attendance.classroom}</td>
+              <td className="px-4 py-2 text-center border-b">{attendance.attendance}</td>
             </tr>
           ))}
         </tbody>

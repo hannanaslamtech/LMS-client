@@ -110,11 +110,11 @@ const Quiz = ({ openQuiz, QuizModalHandler, courseName }) => {
         <thead>
           <tr>
             <th className="px-4 py-2 text-left border-b">Quiz</th>
-            <th className="px-4 py-2 border-b">Date</th>
-            <th className="px-4 py-2 border-b">Appeared</th>
-            <th className="px-4 py-2 border-b">Obtained</th>
-            <th className="px-4 py-2 border-b">Total Marks</th>
-            <th className="px-4 py-2 border-b">Result (%)</th>
+            <th className="px-4 py-2 text-center border-b">Date</th>
+            <th className="px-4 py-2 text-center border-b">Appeared</th>
+            <th className="px-4 py-2 text-center border-b">Obtained</th>
+            <th className="px-4 py-2 text-center border-b">Total Marks</th>
+            <th className="px-4 py-2 text-center border-b">Result (%)</th>
           </tr>
         </thead>
         <tbody>
@@ -124,11 +124,11 @@ const Quiz = ({ openQuiz, QuizModalHandler, courseName }) => {
             quiz.status === "No" ? "bg-red-400" :
              "bg-gray-100"}`}>
               <td className="px-4 py-2 text-left border-b">{quiz.quiz}</td>
-              <td className="px-4 py-2 border-b">{quiz.date}</td>
-              <td className="px-4 py-2 border-b">{quiz.status}</td>
-              <td className="px-4 py-2 border-b">{quiz.obtained}</td>
-              <td className="px-4 py-2 border-b">{quiz.totalMarks}</td>
-              <td className="px-4 py-2 border-b">{quiz.result}</td>
+              <td className="px-4 py-2 text-center border-b">{quiz.date}</td>
+              <td className="px-4 py-2 text-center border-b">{quiz.status}</td>
+              <td className="px-4 py-2 text-center border-b">{quiz.obtained}</td>
+              <td className="px-4 py-2 text-center border-b">{quiz.totalMarks}</td>
+              <td className="px-4 py-2 text-center border-b">{quiz.result}</td>
             </tr>
           ))}
         </tbody>

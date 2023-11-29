@@ -147,11 +147,11 @@ const TimeTableModal = ({ openTimeTableModal, TimeTableModalHandler, courseName 
   {TimeTableVal.map((Timetab, index) => (
     <tr key={index} className="bg-gray-100">
       <td className="px-[1vw] py-[2vh] border-b text-[1vw] font-semibold truncate text-left">{Timetab.Course}</td>
-      <td className="px-[1vw] py-[1vh] border-b text-[1vw] font-normal">{`${Timetab.Mon} (${Timetab.MonNo})`}</td>
-      <td className="px-[1vw] py-[1vh] border-b text-[1vw] font-normal">{`${Timetab.Tue} (${Timetab.TueNo})`}</td>
-      <td className="px-[1vw] py-[1vh] border-b text-[1vw] font-normal">{`${Timetab.Wed} (${Timetab.WedNo})`}</td>
-      <td className="px-[1vw] py-[1vh] border-b text-[1vw] font-normal">{`${Timetab.Thu} (${Timetab.ThuNo})`}</td>
-      <td className="px-[1vw] py-[1vh] border-b text-[1vw] font-normal">{`${Timetab.Fri} (${Timetab.FriNo})`}</td>
+      <td className="px-[1vw] py-[1vh] border-b text-[1vw] font-normal text-center">{`${Timetab.Mon} (${Timetab.MonNo})`}</td>
+      <td className="px-[1vw] py-[1vh] border-b text-[1vw] font-normal text-center">{`${Timetab.Tue} (${Timetab.TueNo})`}</td>
+      <td className="px-[1vw] py-[1vh] border-b text-[1vw] font-normal text-center">{`${Timetab.Wed} (${Timetab.WedNo})`}</td>
+      <td className="px-[1vw] py-[1vh] border-b text-[1vw] font-normal text-center">{`${Timetab.Thu} (${Timetab.ThuNo})`}</td>
+      <td className="px-[1vw] py-[1vh] border-b text-[1vw] font-normal text-center">{`${Timetab.Fri} (${Timetab.FriNo})`}</td>
     </tr>
   ))}
 </tbody>

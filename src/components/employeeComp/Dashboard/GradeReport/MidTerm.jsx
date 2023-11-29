@@ -110,11 +110,11 @@ const MidTerm = ({ openMidTerm, MidTermModalHandler, courseName }) => {
         <thead>
           <tr>
             <th className="px-4 py-2 text-left border-b">Mid-Term</th>
-            <th className="px-4 py-2 border-b">Date</th>
-            <th className="px-4 py-2 border-b">Appeared</th>
-            <th className="px-4 py-2 border-b">Obtained</th>
-            <th className="px-4 py-2 border-b">Total Marks</th>
-            <th className="px-4 py-2 border-b">Result (%)</th>
+            <th className="px-4 py-2 text-center border-b">Date</th>
+            <th className="px-4 py-2 text-center border-b">Appeared</th>
+            <th className="px-4 py-2 text-center border-b">Obtained</th>
+            <th className="px-4 py-2 text-center border-b">Total Marks</th>
+            <th className="px-4 py-2 text-center border-b">Result (%)</th>
           </tr>
         </thead>
         <tbody>
@@ -124,11 +124,11 @@ const MidTerm = ({ openMidTerm, MidTermModalHandler, courseName }) => {
             mid.status === "No" ? "bg-red-400" :
              "bg-gray-100"}`}>
               <td className="px-4 py-2 text-left border-b">{mid.assessment}</td>
-              <td className="px-4 py-2 border-b">{mid.date}</td>
-              <td className="px-4 py-2 border-b">{mid.status}</td>
-              <td className="px-4 py-2 border-b">{mid.obtained}</td>
-              <td className="px-4 py-2 border-b">{mid.totalMarks}</td>
-              <td className="px-4 py-2 border-b">{mid.result}</td>
+              <td className="px-4 py-2 text-center border-b">{mid.date}</td>
+              <td className="px-4 py-2 text-center border-b">{mid.status}</td>
+              <td className="px-4 py-2 text-center border-b">{mid.obtained}</td>
+              <td className="px-4 py-2 text-center border-b">{mid.totalMarks}</td>
+              <td className="px-4 py-2 text-center border-b">{mid.result}</td>
             </tr>
           ))}
         </tbody>

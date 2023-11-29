@@ -108,7 +108,7 @@ const Paid = ({ openPaid, PaidModalHandler }) => {
                 <tr key={index}
                 className="even:bg-blue-50 odd:bg-blue-200">
                   <td className="px-4 py-2 text-left border-b">{paid.desc}</td>
-                  <td className="px-4 py-2 border-b">{paid.date}</td>
+                  <td className="px-4 py-2 text-center border-b">{paid.date}</td>
                   <td className="px-4 py-2 text-left border-b">{paid.mode}</td>
                   <td className="px-4 py-2 text-left border-b">{paid.reference}</td>
                   <td className="px-4 py-2 text-right border-b">{paid.amount}</td>

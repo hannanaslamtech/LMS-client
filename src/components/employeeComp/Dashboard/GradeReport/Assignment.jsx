@@ -111,12 +111,12 @@ const Assignment = ({ openAssignment, AssignmentModalHandler, courseName }) => {
         <thead>
           <tr>
             <th className="px-4 py-2 border-b text-start">Assignments</th>
-            <th className="px-4 py-2 border-b">Date</th>
+            <th className="px-4 py-2 text-center border-b">Date</th>
             <th className="px-4 py-2 border-b text-start">Due Date</th>
             <th className="px-4 py-2 border-b text-start">Status</th>
-            <th className="px-4 py-2 border-b">Obtained</th>
-            <th className="px-4 py-2 border-b">Total Marks</th>
-            <th className="px-4 py-2 border-b">Result (%)</th>
+            <th className="px-4 py-2 text-center border-b">Obtained</th>
+            <th className="px-4 py-2 text-center border-b">Total Marks</th>
+            <th className="px-4 py-2 text-center border-b">Result (%)</th>
           </tr>
         </thead>
         <tbody>
@@ -130,9 +130,9 @@ const Assignment = ({ openAssignment, AssignmentModalHandler, courseName }) => {
               <td className="px-4 py-2 text-center border-b">{assignment.date}</td>
               <td className="px-4 py-2 border-b text-start">{assignment.dueDate}</td>
               <td className="px-4 py-2 border-b text-start">{assignment.status}</td>
-              <td className="px-4 py-2 border-b">{assignment.obtained}</td>
-              <td className="px-4 py-2 border-b">{assignment.totalMarks}</td>
-              <td className="px-4 py-2 border-b">{assignment.result}</td>
+              <td className="px-4 py-2 text-center border-b">{assignment.obtained}</td>
+              <td className="px-4 py-2 text-center border-b">{assignment.totalMarks}</td>
+              <td className="px-4 py-2 text-center border-b">{assignment.result}</td>
             </tr>
           ))}
         </tbody>

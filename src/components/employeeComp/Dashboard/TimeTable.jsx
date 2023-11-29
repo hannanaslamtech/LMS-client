@@ -60,11 +60,11 @@ const TimeTable = ({TimeTableModalHandler}) => {
                 <tr key={index}
                   className="bg-gray-100">
                   <td className="px-[1vw] py-[1vh] border-b text-[0.8vw] font-semibold truncate text-left">{Timetab.Course}</td>
-                  <td className="px-[1vw] py-[1vh] border-b text-[0.8vw] font-normal">{Timetab.MonNo}</td>
-                  <td className="px-[1vw] py-[1vh] border-b text-[0.8vw] font-normal">{Timetab.TueNo}</td>
-                  <td className="px-[1vw] py-[1vh] border-b text-[0.8vw] font-normal">{Timetab.WedNo}</td>
-                  <td className="px-[1vw] py-[1vh] border-b text-[0.8vw] font-normal">{Timetab.ThuNo}</td>
-                  <td className="px-[1vw] py-[1vh] border-b text-[0.8vw] font-normal">{Timetab.FriNo}</td>
+                  <td className="px-[1vw] py-[1vh] border-b text-[0.8vw] font-normal text-center">{Timetab.MonNo}</td>
+                  <td className="px-[1vw] py-[1vh] border-b text-[0.8vw] font-normal text-center">{Timetab.TueNo}</td>
+                  <td className="px-[1vw] py-[1vh] border-b text-[0.8vw] font-normal text-center">{Timetab.WedNo}</td>
+                  <td className="px-[1vw] py-[1vh] border-b text-[0.8vw] font-normal text-center">{Timetab.ThuNo}</td>
+                  <td className="px-[1vw] py-[1vh] border-b text-[0.8vw] font-normal text-center">{Timetab.FriNo}</td>
                 </tr>
               ))}
             </tbody>

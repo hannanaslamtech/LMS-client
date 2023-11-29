@@ -181,12 +181,12 @@ const AllSemModal = ({ openAllSemModal, AllSemModalHandler }) => {
                     <tbody>
                       {semester.SemesterDetail.map((course, index) => (
                         <tr key={index} className="bg-gray-100">
-                          <td className="px-4 py-2 border-b">{course.Course}</td>
-                          <td className="px-4 py-2 border-b">{course.Attendence}</td>
-                          <td className="px-4 py-2 border-b">{course.Assignment}</td>
-                          <td className="px-4 py-2 border-b">{course.Quiz}</td>
-                          <td className="px-4 py-2 border-b">{course.Exams}</td>
-                          <td className="px-4 py-2 border-b">{course.FinalResult}</td>
+                          <td className="px-4 py-2 border-b text-start">{course.Course}</td>
+                          <td className="px-4 py-2 text-center border-b">{course.Attendence}</td>
+                          <td className="px-4 py-2 text-center border-b">{course.Assignment}</td>
+                          <td className="px-4 py-2 text-center border-b">{course.Quiz}</td>
+                          <td className="px-4 py-2 text-center border-b">{course.Exams}</td>
+                          <td className="px-4 py-2 text-center border-b">{course.FinalResult}</td>
                         </tr>
                       ))}
 
