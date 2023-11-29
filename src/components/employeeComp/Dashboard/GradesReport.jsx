@@ -167,22 +167,22 @@ const GradesReport = ({ AssignmentModalHandler, QuizModalHandler,MidTermModalHan
                   <tr className='divide-y divide-gray-200' key={item.id}>
                     <td className="px-[1vw] py-[1vh] text-[0.8vw] flex-shrink-0 truncate
                     text-left">{item.Courses}</td>
-                    <td className="px-[1vw] py-[1vh] text-[0.8vw]
+                    <td className="px-[1vw] py-[1vh] text-[0.8vw] text-center
                      hover:text-blue-500 hover:underline hover:cursor-pointer"
                      onClick={() => ClassesModalHandler(item.Courses)}>{item.Classes}</td>
-                    <td className="px-[1vw] py-[1vh] text-[0.8vw]
+                    <td className="px-[1vw] py-[1vh] text-[0.8vw] text-center
                     hover:text-blue-500 hover:underline hover:cursor-pointer"
                     onClick={() => AttendanceModalHandler(item.Courses)}>{item.Attendance}</td>
-                    <td className="px-[1vw] py-[1vh] text-[0.8vw]
+                    <td className="px-[1vw] py-[1vh] text-[0.8vw] text-center
                    hover:text-blue-500 hover:underline hover:cursor-pointer"
                       onClick={() => AssignmentModalHandler(item.Courses)}>{item.Assignment}</td>
-                    <td className="px-[1vw] py-[1vh] text-[0.8vw]
+                    <td className="px-[1vw] py-[1vh] text-[0.8vw] text-center
                      hover:text-blue-500 hover:underline hover:cursor-pointer"
                      onClick={() => QuizModalHandler(item.Courses)}>{item.Quiz}</td>
-                    <td className="px-[1vw] py-[1vh] text-[0.8vw]
+                    <td className="px-[1vw] py-[1vh] text-[0.8vw] text-center
                     hover:text-blue-500 hover:underline hover:cursor-pointer"
                     onClick={() => MidTermModalHandler(item.Courses)}>{item.MidTerm}</td>
-                    <td className="px-[1vw] py-[1vh] text-[0.8vw]
+                    <td className="px-[1vw] py-[1vh] text-[0.8vw] text-center
                     hover:text-blue-500 hover:underline hover:cursor-pointer"
                     onClick={() => FinalModalHandler(item.Courses)}>{item.FinalExam}</td>
                   </tr>
